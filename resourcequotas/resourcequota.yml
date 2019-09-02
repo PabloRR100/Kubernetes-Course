@@ -28,3 +28,4 @@ spec:
     secrets: "10"
     services: "10"
     services.loadbalancers: "2"
+
