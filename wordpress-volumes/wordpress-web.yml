@@ -61,7 +61,7 @@ spec:
           - name: WORDPRESS_NONCE_SALT
             valueFrom:
               secretKeyRef:
-                name: wordpress-secrets
+                name: wordpress-secrets 
                 key: noncesalt
           - name: WORDPRESS_DB_HOST
             value: wordpress-db
@@ -71,5 +71,5 @@ spec:
       volumes:
       - name: uploads
         nfs:
-          server: eu-west-1a.fs-5714e89e.efs.eu-west-1.amazonaws.com
+          server: eu-west-1a.fs-902ae35b.efs.eu-west-1.amazonaws.com
           path: /
