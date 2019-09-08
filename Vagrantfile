@@ -11,5 +11,8 @@ Vagrant.configure("2") do |config|
   # Public network, which generally matched to bridged network, which
   # make the machine appear as another physical device on your network.
   # config.vm.network "public_network"
+  
+  config.vm.synced_folder ".", "/home/vagrant/work"
+  # config.vm.synced_folder ".", "/vagrant/", :nfs => { }:mount_options =>["dmode=777", "fmode=666"] }
 
 end
