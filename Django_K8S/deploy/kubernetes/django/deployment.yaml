@@ -35,5 +35,5 @@ spec:
             - name: POSTGRES_HOST
               value: postgres-service
 
-            - name: REDIS_HOST
-              value: redis-service
+            # - name: REDIS_HOST
+            # value: redis-service
